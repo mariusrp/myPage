@@ -1,0 +1,35 @@
+{% extends "nav.html" %}
+
+<body>
+  <h1>Budget Calculator</h1>
+
+  <form>
+    <label for="income">Income:</label><br>
+    <input type="text" id="income" name="income"><br>
+    <br>
+
+    <label for="expenses">Expenses:</label><br>
+    <input type="text" id="expenses" name="expenses"><br>
+    <br>
+
+    <input type="submit" value="Calculate Budget">
+  </form>
+
+  <br>
+
+  <div id="result"></div>
+
+  <script>
+    const form = document.querySelector('form');
+    const resultDiv = document.querySelector('#result');
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const income = document.querySelector('#income').value;
+      const expenses = document.querySelector('#expenses').value;
+      const budget = income - expenses;
+      resultDiv.innerHTML = `Your budget is $${budget}`;
+    });
+  </script>
+</body>
+{%endblock%}

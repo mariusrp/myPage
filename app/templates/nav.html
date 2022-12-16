@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<nav>
+  <ul>
+    <li><a href="{{url_for('home')}}">Home</a></li>
+    <li><a href="{{url_for('login')}}">Login</a></li>
+    <li><a href="{{url_for('create_account')}}">Create Account</a></li>
+    <li><a href="{{url_for('contact')}}">Contact</a></li>
+    <li><a href="{{url_for('calculator')}}">Calculator</a></li>
+  </ul>
+</nav>
+
+{%block body%} {%endblock%}

@@ -1,0 +1,22 @@
+{% extends "nav.html" %}
+
+<body>
+  <div class="form-container">
+    <h1>Log In</h1>
+    <form id="login-form">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]{8,16}" required><br>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,16}" required><br>
+      <input type="submit" value="Submit">
+      <a href="create_account.html">Dont have an account?</a>
+    </form>
+    <!-- <div class="error">
+    <p>Please enter a valid username and password.</p>
+  </div> -->
+  </div>
+  </nav>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
