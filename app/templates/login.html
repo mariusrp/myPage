@@ -1,5 +1,7 @@
 {% extends "nav.html" %}
 
+{%block body%}
+
 <body>
   <div class="form-container">
     <h1>Log In</h1>
@@ -9,7 +11,7 @@
       <label for="password">Password:</label><br>
       <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,16}" required><br>
       <input type="submit" value="Submit">
-      <a href="create_account.html">Dont have an account?</a>
+      <a href="create_account">Dont have an account?</a>
     </form>
     <!-- <div class="error">
     <p>Please enter a valid username and password.</p>
@@ -18,5 +20,4 @@
   </nav>
   <script src="javascript.js"></script>
 </body>
-
-</html>
+{%endblock%}

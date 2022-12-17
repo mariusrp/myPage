@@ -9,8 +9,9 @@ def home():
 
 
 @app.route("/contact")
+
 def contact():
-    return render_template("contact.html", name="Bendik", title="Juniorkonsulent")
+    return render_template("contact.html")
 
 
 @app.route("/create_account")
@@ -20,9 +21,9 @@ def create_account():
 
 @app.route("/login")
 def login():
-    return render_template("login.html", name="Bendik", title="Juniorkonsulent")
+    return render_template("login.html")
 
 
 @app.route("/calculator")
 def calculator():
-    return render_template("calculator.html", name="Bendik", title="Juniorkonsulent")
+    return render_template("calculator.html")
